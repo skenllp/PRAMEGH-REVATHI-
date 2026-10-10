@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ml">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>രേവതി &amp; പ്രമേഗ് – വിവാഹ ക്ഷണക്കത്ത്</title>
+  <meta name="description" content="രേവതി പി, പ്രമേഗ് കെ എന്നിവരുടെ വിവാഹത്തിലേക്ക് സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു. ശ്രീ മഹാഗണപതി ക്ഷേത്രം, പുത്തൻ തെരു, ചെട്ടിപ്പടി." />
+
+  <!-- Open Graph / WhatsApp & Social sharing preview
+       NOTE: replace the domain below with the real deployed URL (og:image must be an absolute URL) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pramegh-revathi.skenllp.com/" />
+  <meta property="og:title" content="രേവതി &amp; പ്രമേഗ് – വിവാഹ ക്ഷണക്കത്ത്" />
+  <meta property="og:description" content="രേവതി പി, പ്രമേഗ് കെ എന്നിവരുടെ വിവാഹത്തിലേക്ക് സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു." />
+  <meta property="og:image" content="https://pramegh-revathi.skenllp.com/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="രേവതി &amp; പ്രമേഗ് – വിവാഹ ക്ഷണക്കത്ത്" />
+  <meta name="twitter:description" content="രേവതി പി, പ്രമേഗ് കെ എന്നിവരുടെ വിവാഹത്തിലേക്ക് സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു." />
+  <meta name="twitter:image" content="https://pramegh-revathi.skenllp.com/og.jpg" />
+  <link rel="preload" as="image" href="hero-mobile.webp" type="image/webp" media="(max-width: 768px)" />
+  <link rel="preload" as="image" href="hero.webp" type="image/webp" media="(min-width: 769px)" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@400;500;600;700&family=Manjari:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <svg viewBox="0 0 100 100" class="preloader-ring">
+        <circle cx="50" cy="50" r="42"></circle>
+      </svg>
+      <span class="preloader-initials" id="preloaderInitials">രേ&nbsp;&amp;&nbsp;പ്ര</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ FLOATING PARTICLES ═══════════════════ -->
+  <div class="particles" id="particles"></div>
+
+  <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+
+    <!-- The Nikah Arch — signature reveal -->
+    <div class="arch-frame" id="archFrame">
+      <svg class="arch-leaf arch-leaf--left" id="archLeft" viewBox="0 0 220 420" xmlns="http://www.w3.org/2000/svg">
+        <path d="M220,420 L220,120 C220,55 175,10 110,0 L110,420 Z" />
+        <path class="arch-leaf__inline" d="M110,20 C165,32 200,68 200,122 L200,400" />
+      </svg>
+      <svg class="arch-leaf arch-leaf--right" id="archRight" viewBox="0 0 220 420" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,420 L0,120 C0,55 45,10 110,0 L110,420 Z" />
+        <path class="arch-leaf__inline" d="M110,20 C55,32 20,68 20,122 L20,400" />
+      </svg>
+
+      <!-- jasmine garland along the top of the arch -->
+      <svg class="garland" viewBox="0 0 440 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="garland__string" d="M10,10 Q220,70 430,10" />
+        <g class="garland__buds">
+          <circle cx="40" cy="24" r="5"></circle>
+          <circle cx="80" cy="35" r="6"></circle>
+          <circle cx="120" cy="43" r="5"></circle>
+          <circle cx="160" cy="48" r="6"></circle>
+          <circle cx="200" cy="51" r="5"></circle>
+          <circle cx="240" cy="51" r="5"></circle>
+          <circle cx="280" cy="48" r="6"></circle>
+          <circle cx="320" cy="43" r="5"></circle>
+          <circle cx="360" cy="35" r="6"></circle>
+          <circle cx="400" cy="24" r="5"></circle>
+        </g>
+      </svg>
+
+      <button type="button" class="arch-cta" id="archCta">
+        <span class="arch-cta__ring"></span>
+        <span class="arch-cta__label">ക്ഷണക്കത്ത് തുറക്കുക</span>
+      </button>
+
+      <!-- ring particle burst, populated by script.js when the arch opens -->
+      <div class="ring-particles" id="ringParticles" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="ganesha-container" style="margin-bottom: 12px;">
+        <svg class="ganesha-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" width="60" height="72"
+          fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+          style="filter: drop-shadow(0 2px 8px rgba(212,175,55,0.3));">
+          <path d="M50 15 L50 30 M42 22 C42 22 50 10 50 10 C50 10 58 22 58 22 M40 28 L60 28 M45 25 L55 25" />
+          <path d="M42 35 C30 35 25 50 40 60 C42 61 45 61 47 60" />
+          <path d="M58 35 C70 35 75 50 60 60 C58 61 55 61 53 60" />
+          <path
+            d="M47 42 C47 42 50 38 53 42 C53 42 55 50 51 62 C47 74 46 82 52 86 C58 90 64 88 66 82 C68 76 65 72 61 72" />
+          <path d="M47 46 Q50 52 53 46" fill="#D4AF37" stroke="none" />
+          <path d="M50 42 L50 48" />
+        </svg>
+      </div>
+      <p class="shloka"
+        style="font-family: var(--font-serif); font-size: 1.2rem; font-weight: 500; color: var(--gold); letter-spacing: 1px; margin-bottom: 8px;">
+        ശ്രീ ഗണേശായ നമഃ</p>
+      <div class="divider-ornament"><span></span><svg viewBox="0 0 40 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 2 L36 10 L20 18 L4 10 Z" stroke="#D4AF37" stroke-width="1" fill="none" />
+        </svg><span></span></div>
+      <h1 class="hero-names">
+        <span class="bride-name">രേവതി</span>
+        <span class="ampersand">&amp;</span>
+        <span class="groom-name">പ്രമേഗ്</span>
+      </h1>
+      <p class="hero-subtitle">വിവാഹ ക്ഷണക്കത്ത്</p>
+      <div class="hero-date">
+        <span class="date-num" id="heroDay"></span>
+        <span class="date-sep">·</span>
+        <span class="date-num" id="heroMonth"></span>
+        <span class="date-sep">·</span>
+        <span class="date-num" id="heroYear"></span>
+      </div>
+      <a href="#invitation" class="scroll-btn">
+        <span>താഴേക്ക് സ്ക്രോൾ ചെയ്യുക</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ COUNTDOWN ═══════════════════ -->
+  <section class="countdown-section" id="countdown">
+    <div class="section-header">
+      <p class="section-tag">തീയതി കുറിച്ചുവെക്കൂ</p>
+      <h2 class="section-title">ആ മംഗളദിനത്തിലേക്ക്</h2>
+      <div class="divider-line"><span></span><span class="diamond">◆</span><span></span></div>
+    </div>
+    <div class="countdown-grid">
+      <div class="count-box">
+        <span class="count-num" id="days">00</span>
+        <span class="count-label">ദിവസം</span>
+      </div>
+      <div class="count-box">
+        <span class="count-num" id="hours">00</span>
+        <span class="count-label">മണിക്കൂർ</span>
+      </div>
+      <div class="count-box">
+        <span class="count-num" id="minutes">00</span>
+        <span class="count-label">മിനിറ്റ്</span>
+      </div>
+      <div class="count-box">
+        <span class="count-num" id="seconds">00</span>
+        <span class="count-label">സെക്കൻഡ്</span>
+      </div>
+    </div>
+    <p class="countdown-note" id="countdownNote"></p>
+  </section>
+
+  <!-- ═══════════════════ INVITATION CARD ═══════════════════ -->
+  <section class="invitation-section" id="invitation">
+    <div class="inv-card">
+      <div class="inv-card-inner">
+        <p class="inv-from-label">ഈശ്വരാനുഗ്രഹത്താൽ</p>
+        <p class="inv-cordially">ഞങ്ങളുടെ മകളുടെ വിവാഹ മംഗളകർമ്മത്തിൽ<br />സകുടുംബം സന്നിഹിതരായി വധൂവരന്മാരെ<br />അനുഗ്രഹിക്കണമെന്ന് സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു</p>
+        <div class="divider-line small"><span></span><span class="diamond">◆</span><span></span></div>
+        <h2 class="inv-bride" style="margin-bottom: 2px;">രേവതി പി</h2>
+        <p class="inv-daughter"
+          style="font-family: var(--font-serif); font-size: 0.95rem; color: var(--text-mid); margin-bottom: 8px;">രാജഗോപാലന്റെ മകൾ<br />പുളിക്കൽ ഹൗസ്, ചെട്ടിപ്പടി, പരപ്പനങ്ങാടി</p>
+        <p class="inv-with">ഒപ്പം</p>
+        <h2 class="inv-groom" style="margin-top: 4px;">പ്രമേഗ് കെ</h2>
+        <p class="inv-son">ചോയി കെ.യുടെ മകൻ<br />കുറുപ്പൻകണ്ടി ഹൗസ്, എൻ സി സി റോഡ്, പരപ്പനങ്ങാടി</p>
+        <div class="divider-line small"><span></span><span class="diamond">◆</span><span></span></div>
+        <p class="sharing-text" style="font-size: 0.95rem; line-height: 1.9;">വിവാഹം <span id="invDate"></span> രാവിലെ 9.30 നും 11 നും ഇടയിലുള്ള മുഹൂർത്തത്തിൽ ശ്രീ മഹാഗണപതി ക്ഷേത്രം, പുത്തൻ തെരു, ചെട്ടിപ്പടിയിൽ വെച്ച് നടക്കുന്നതാണ്.<br />തുടർന്ന് വിവാഹ സൽക്കാരം കൊട്ടാലത്ത് ഗാർഡേനിയ കൺവെൻഷൻ സെന്റർ, ചെട്ടിപ്പടിയിൽ.</p>
+      </div>
+      <div class="inv-corner inv-corner-tl"></div>
+      <div class="inv-corner inv-corner-tr"></div>
+      <div class="inv-corner inv-corner-bl"></div>
+      <div class="inv-corner inv-corner-br"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ BRIDE & GROOM ═══════════════════ -->
+  <section class="couple-section" id="couple">
+    <div class="section-header">
+      <p class="section-tag">വധൂവരന്മാർ</p>
+      <h2 class="section-title">വധുവും വരനും</h2>
+      <div class="divider-line"><span></span><span class="diamond">◆</span><span></span></div>
+    </div>
+    <div class="couple-grid">
+      <!-- BRIDE -->
+      <div class="person-card bride-card" data-aos="fade-right">
+        <div class="person-photo-ring">
+          <div class="person-photo bride-photo">
+            <img src="bride.webp" alt="രേവതി – വധു" id="bride-img" width="480" height="480" loading="lazy" decoding="async" />
+            <div class="photo-fallback bride-fallback">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" fill="none">
+                <ellipse cx="60" cy="55" rx="30" ry="35" fill="#1a3a6b" opacity="0.15" />
+                <circle cx="60" cy="45" r="22" fill="#1a3a6b" opacity="0.2" />
+                <path d="M20 140 Q60 100 100 140" fill="#1a3a6b" opacity="0.15" />
+                <text x="60" y="55" text-anchor="middle" font-size="40" fill="#1a3a6b" opacity="0.4">♀</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="person-info">
+          <h3 class="person-name">രേവതി പി</h3>
+          <p class="person-role">വധു</p>
+          <div class="person-divider"></div>
+          <p class="person-parents">രാജഗോപാലന്റെ മകൾ</p>
+          <p class="person-address">പുളിക്കൽ ഹൗസ്<br />ചെട്ടിപ്പടി, പരപ്പനങ്ങാടി</p>
+        </div>
+      </div>
+
+      <!-- AMPERSAND DIVIDER -->
+      <!-- <div class="couple-amp">
+        <span>&amp;</span> 
+      </div>  -->
+
+      <!-- GROOM -->
+      <div class="person-card groom-card" data-aos="fade-left">
+        <div class="person-photo-ring">
+          <div class="person-photo groom-photo">
+            <img src="groom.webp" alt="പ്രമേഗ് – വരൻ" id="groom-img" width="480" height="480" loading="lazy" decoding="async" />
+            <div class="photo-fallback groom-fallback">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" fill="none">
+                <ellipse cx="60" cy="55" rx="30" ry="35" fill="#1a3a6b" opacity="0.15" />
+                <circle cx="60" cy="45" r="22" fill="#1a3a6b" opacity="0.2" />
+                <path d="M20 140 Q60 100 100 140" fill="#1a3a6b" opacity="0.15" />
+                <text x="60" y="55" text-anchor="middle" font-size="40" fill="#1a3a6b" opacity="0.4">♂</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="person-info">
+          <h3 class="person-name">പ്രമേഗ് കെ</h3>
+          <p class="person-role">വരൻ</p>
+          <div class="person-divider"></div>
+          <p class="person-parents">ചോയി കെ.യുടെ മകൻ</p>
+          <p class="person-address">കുറുപ്പൻകണ്ടി ഹൗസ്<br />എൻ സി സി റോഡ്, പരപ്പനങ്ങാടി</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ EVENT DETAILS ═══════════════════ -->
+  <section class="event-section" id="event">
+    <div class="event-bg-pattern"></div>
+    <div class="section-header light">
+      <p class="section-tag">ആഘോഷം</p>
+      <h2 class="section-title">ഞങ്ങളുടെ വിശേഷ ദിനത്തിൽ പങ്കുചേരുക</h2>
+      <div class="divider-line"><span></span><span class="diamond">◆</span><span></span></div>
+    </div>
+
+    <div class="event-cards">
+      <!-- Wedding -->
+      <div class="event-card">
+        <div class="event-badge">വിവാഹം</div>
+        <h3 class="event-name">വിവാഹം</h3>
+        <div class="event-divider"><span></span><span class="diamond small">◆</span><span></span></div>
+        <div class="event-detail" id="eventDateRow">
+          <div class="event-icon"><i data-lucide="calendar"></i></div>
+          <div>
+            <p class="detail-label">തീയതി</p>
+            <p class="detail-val"><span id="eventDate"></span></p>
+          </div>
+        </div>
+        <div class="event-detail">
+          <div class="event-icon"><i data-lucide="clock"></i></div>
+          <div>
+            <p class="detail-label">മുഹൂർത്തം</p>
+            <p class="detail-val">രാവിലെ 9.30 നും 11 നും ഇടയിൽ</p>
+          </div>
+        </div>
+        <div class="event-detail">
+          <div class="event-icon"><i data-lucide="map-pin"></i></div>
+          <div>
+            <p class="detail-label">വേദി</p>
+            <p class="detail-val">ശ്രീ മഹാഗണപതി ക്ഷേത്രം</p>
+            <p class="detail-sub">പുത്തൻ തെരു, ചെട്ടിപ്പടി</p>
+          </div>
+        </div>
+        <div class="event-btns">
+          <a href="https://www.google.com/maps/search/?api=1&query=Sree+Mahaganapathi+Temple+Puthan+Theru+Chettippadi" target="_blank" rel="noopener" class="btn-loc primary-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            ഗൂഗിൾ മാപ്പിൽ തുറക്കുക
+          </a>
+        </div>
+      </div>
+
+      <!-- Reception -->
+      <div class="event-card">
+        <div class="event-badge">വിവാഹ സൽക്കാരം</div>
+        <h3 class="event-name">വിവാഹ സൽക്കാരം</h3>
+        <div class="event-divider"><span></span><span class="diamond small">◆</span><span></span></div>
+        <div class="event-detail">
+          <div class="event-icon"><i data-lucide="map-pin"></i></div>
+          <div>
+            <p class="detail-label">വേദി</p>
+            <p class="detail-val">കൊട്ടാലത്ത് ഗാർഡേനിയ കൺവെൻഷൻ സെന്റർ</p>
+            <p class="detail-sub">ചെട്ടിപ്പടി</p>
+          </div>
+        </div>
+        <div class="event-btns">
+          <a href="https://www.google.com/maps/search/?api=1&query=Kottalath+Gardenia+Convention+Centre+Chettippadi" target="_blank" rel="noopener" class="btn-loc primary-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            ഗൂഗിൾ മാപ്പിൽ തുറക്കുക
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ RSVP SECTION ═══════════════════ -->
+  <section class="rsvp-section" id="rsvp">
+    <div class="section-header">
+      <p class="section-tag">താങ്കൾ വരുമോ?</p>
+      <h2 class="section-title">മറുപടി അറിയിക്കുക</h2>
+      <div class="divider-line"><span></span><span class="diamond">◆</span><span></span></div>
+      <p class="rsvp-subtitle">ഞങ്ങളുടെ ആഘോഷത്തിൽ പങ്കെടുക്കുമോ എന്ന് ദയവായി അറിയിക്കുക</p>
+    </div>
+
+    <div class="rsvp-card">
+      <!-- Corner decorations -->
+      <div class="inv-corner inv-corner-tl"></div>
+      <div class="inv-corner inv-corner-tr"></div>
+      <div class="inv-corner inv-corner-bl"></div>
+      <div class="inv-corner inv-corner-br"></div>
+
+      <form class="rsvp-form" id="rsvp-form" novalidate>
+
+        <!-- Attendance toggle — two hidden radio inputs drive the state -->
+        <div class="rsvp-field">
+          <p class="rsvp-label">പങ്കെടുക്കുമോ?</p>
+          <div class="rsvp-attend-toggle">
+            <input type="radio" name="attendance" id="attend-yes" value="തീർച്ചയായും വരും" class="attend-radio"
+              checked />
+            <label for="attend-yes" class="attend-btn attend-btn--yes">തീർച്ചയായും വരും</label>
+
+            <input type="radio" name="attendance" id="attend-no" value="ക്ഷമിക്കണം, വരാൻ കഴിയില്ല" class="attend-radio" />
+            <label for="attend-no" class="attend-btn attend-btn--no">ക്ഷമിക്കണം, വരാൻ കഴിയില്ല</label>
+          </div>
+        </div>
+
+        <!-- Name -->
+        <div class="rsvp-field">
+          <label class="rsvp-label" for="rsvp-name">പേര്</label>
+          <input type="text" id="rsvp-name" name="name" class="rsvp-input" placeholder="താങ്കളുടെ പൂർണ്ണ പേര്"
+            autocomplete="name" required />
+        </div>
+
+        <!-- Mobile -->
+        <div class="rsvp-field">
+          <label class="rsvp-label" for="rsvp-mobile">മൊബൈൽ നമ്പർ</label>
+          <input type="tel" id="rsvp-mobile" name="mobile" class="rsvp-input" placeholder="ഉദാ: +91 98765 43210"
+            autocomplete="tel" required />
+        </div>
+
+        <!-- Number of guests (hidden when not attending) -->
+        <div class="rsvp-field" id="guests-group">
+          <label class="rsvp-label" for="rsvp-guests">അതിഥികളുടെ എണ്ണം</label>
+          <input type="number" id="rsvp-guests" name="guests" class="rsvp-input" value="1" min="1" max="20" required />
+        </div>
+
+        <!-- Special message -->
+        <div class="rsvp-field">
+          <label class="rsvp-label" for="rsvp-message">ആശംസകൾ / അനുഗ്രഹങ്ങൾ</label>
+          <textarea id="rsvp-message" name="message" class="rsvp-input rsvp-textarea"
+            placeholder="താങ്കളുടെ ആശംസകളും അനുഗ്രഹങ്ങളും കുറിക്കാം..." rows="4"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="rsvp-submit-btn">
+          മറുപടി അയയ്ക്കുക
+        </button>
+
+      </form>
+
+      <!-- Success message (shown after submission) -->
+      <div class="rsvp-success" id="rsvp-success" style="display:none;">
+        <div class="rsvp-success__icon">✦</div>
+        <h3 class="rsvp-success__title">നന്ദി!</h3>
+        <p class="rsvp-success__text">താങ്കളുടെ മറുപടി ലഭിച്ചു. താങ്കളോടൊപ്പം ആഘോഷിക്കാൻ ഞങ്ങൾ കാത്തിരിക്കുന്നു.</p>
+        <button type="button" class="rsvp-edit-btn" id="edit-rsvp-btn">മറുപടി തിരുത്തുക</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ GLIMPSES GALLERY ═══════════════════ -->
+  <section class="glimpses-section" id="glimpses">
+    <div class="section-header">
+      <p class="section-tag">ചിത്രങ്ങൾ</p>
+      <h2 class="section-title">വിവാഹപൂർവ്വ നിമിഷങ്ങൾ</h2>
+      <div class="divider-line"><span></span><span class="diamond">◆</span><span></span></div>
+    </div>
+    <div class="glimpses-container">
+      <div class="glimpses-grid">
+        <div class="glimpse-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="glimpse-img-wrapper">
+            <img src="gallery1.webp" alt="ചിത്രം 1" width="1000" height="1500" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="glimpse-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="glimpse-img-wrapper">
+            <img src="gallery2.webp" alt="ചിത്രം 2" width="1000" height="1500" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="glimpse-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="glimpse-img-wrapper">
+            <img src="gallery3.webp" alt="ചിത്രം 3" width="1000" height="1500" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="glimpse-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="glimpse-img-wrapper">
+            <img src="gallery4.webp" alt="ചിത്രം 4" width="1000" height="1500" loading="lazy" decoding="async" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer-floral footer-floral-l">
+      <svg width="120" height="200" viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M60 190 Q40 160 50 120 Q30 140 10 130 Q35 110 55 90 Q35 95 20 75 Q45 80 60 60 Q55 35 70 10 Q75 40 65 65 Q80 45 100 50 Q80 68 65 85 Q85 82 98 100 Q75 100 65 118 Q78 130 75 160 Q62 150 60 190Z"
+          fill="#1a3a6b" opacity="0.12" />
+        <circle cx="60" cy="10" r="5" fill="#D4AF37" opacity="0.5" />
+        <circle cx="100" cy="50" r="4" fill="#D4AF37" opacity="0.4" />
+        <circle cx="10" cy="130" r="3" fill="#D4AF37" opacity="0.4" />
+      </svg>
+    </div>
+    <div class="footer-content">
+      <h2 class="footer-names">രേവതി &amp; പ്രമേഗ്</h2>
+      <p class="footer-date" id="footerDate"></p>
+      <p class="footer-sharing">സ്നേഹാദരങ്ങളോടെ</p>
+      <p class="footer-sharing">ചോയി കെ, രാജഗോപാലൻ എന്നിവരുടെ കുടുംബാംഗങ്ങൾ</p>
+      <div class="footer-contact">
+      </div>
+    </div>
+    <div class="footer-floral footer-floral-r">
+      <svg width="120" height="200" viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg"
+        style="transform:scaleX(-1)">
+        <path
+          d="M60 190 Q40 160 50 120 Q30 140 10 130 Q35 110 55 90 Q35 95 20 75 Q45 80 60 60 Q55 35 70 10 Q75 40 65 65 Q80 45 100 50 Q80 68 65 85 Q85 82 98 100 Q75 100 65 118 Q78 130 75 160 Q62 150 60 190Z"
+          fill="#1a3a6b" opacity="0.12" />
+        <circle cx="60" cy="10" r="5" fill="#D4AF37" opacity="0.5" />
+        <circle cx="100" cy="50" r="4" fill="#D4AF37" opacity="0.4" />
+        <circle cx="10" cy="130" r="3" fill="#D4AF37" opacity="0.4" />
+      </svg>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
